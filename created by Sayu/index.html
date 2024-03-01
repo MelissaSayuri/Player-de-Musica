@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+
+    <!-- cabeçalho de config  -->
+    <head>
+
+        <meta charset="UTF-8"/>
+        <title>Player de Música</title>
+
+        <!-- Links de Fontes de Letras -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+        <!-- link para o CSS do projeto -->
+        <link rel="stylesheet" type="text/css" href="./src/css/style.css">
+
+    </head>
+
+    <!-- corpo  -->
+    <body>
+
+        <!-- TAG MAIS IMPORTANTE -->
+        <main> 
+            <!-- Menu de Navegacao -->
+            <aside class="sidebarMenuNavegacao">
+                <!-- Logo -->
+                <!-- <img src="" alt="Logo "> -->
+
+                 <!-- Menu -->
+                    <nav class="menuNavegacao">
+
+                      <!-- Lista de Links -->
+                     <ul class="listaLinks">
+
+                         <!-- Iem da Lista -->
+                           <li> 
+                                <a href="https://spotify.com/">
+                                     <img src="./src/img/icone1.png" alt="Home">
+                                     Home
+                                 </a>
+                           </li>
+
+                            <!-- Iem da Lista -->
+                            <li>
+                                <a href="https://spotify.com/">
+                                    <img src="./src/img/icone2.png" alt="Browse">
+                                    Browse 
+                                </a>
+                            </li>
+
+                            <!-- Iem da Lista -->
+                            <li>
+                                <a href="https://spotify.com/">
+                                    <img src="./src/img/icone3-hover.png" alt="Liked Songs">
+                                    Liked Songs
+                                </a>
+                            </li>
+
+                        </ul>
+                        
+                     </nav>
+                        
+            </aside>
+         
+            <!-- Secao Lista de Musica  -->
+            <section class="secaoMusicas">
+
+               <!-- cabecalho da secao de muscias -->
+                <header class="cabecalho">
+
+                    <div class="user">
+
+                        <img src="./src/img/user.png" alt="user">
+                        <h2>Sayuri</h2>
+
+                    </div>
+
+                    <div class="qtdMusicas">
+
+                        <p>1158 Songs</p>
+
+                    </div>
+
+                </header>
+
+                <!-- Lista de Musica -->
+                <div class="areaListaMusicas">
+                    <!-- Botao de Pause -->
+                    <button id="btnPause">Pause</button>
+
+                    <!-- Cabecalho que representa as musicas  -->
+                    <div class="cabecalhoInfoMusicas">
+                        <p class="primeiroItem">TITLE</p>
+                        <p>ARTIST</p>
+                        <p>ALBUM</p>
+                    </div>
+
+                    <!-- Lista de Musicas -->
+                    <ul class="listaMusicas">
+                        
+                    </ul>
+                </div>
+
+            </section>
+                          
+            <!-- Player -->
+            <section class="areaPlayer">
+
+                <audio src="" id="saidaAudio"></audio>
+
+                <div class="infoMusicaAtual">
+
+                    <figure class="imagemAlbum">
+                        <img src="./src/img/album4.png" alt="">
+                    </figure>
+
+                    <div class="infoAlbum">
+                        
+                        <h2>Square One</h2>
+                        <p>Coldplay</p>
+
+                    </div> 
+                
+                </div>
+
+                <div class="areaPlayerControles">
+
+                    <button id="btnControlPrev"></button>
+                    <button id="btnControlPlay"></button>
+                    <button id="btnControlNext"></button>
+
+                </div>
+
+                <div class="areaPlayerVolume">
+                    <input type="range" value="1" step="0.1"> 
+                </div>
+
+            </section>
+
+        </main>
+                
+            <script type="text/javascript" src="./src/js/script.js"></script>
+
+       </body>
+                        
+ </html>
+
+            
